@@ -1,0 +1,28 @@
+Used commands:
+python manage.py startapp restApi
+python manage.py migrate
+python manage.py makemigrations TechCourse
+python manage.py sqlmigrate TechCourse 0001
+python manage.py createsuperuser
+Username (leave blank to use 'yuliyahancharenka'): yuliya
+Email address: ladyjuliagoncharenko@gmail.com
+Password: 141986
+Superuser created successfully.
+
+python manage.py runserver
+
+in Postman:
+1. Send GET request - http://127.0.0.1:8000/employees/
+2. Get the following response:
+[
+    {
+        "id": 1,
+        "first_name": "Yuliya",
+        "last_name": "Hancharenk"
+    },
+    {
+        "id": 2,
+        "first_name": "Maria",
+        "last_name": "Kolesnikov"
+    }
+]
